@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link id="theme1" rel="stylesheet" type="text/css" href="style.css"></link>
+    <head>
+      <title>Sign Up</title>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="HowDoesItWork.html">How does it work?</a>
+        <a class="active" href="signupInside.html">Sign up</a>
+      </div>
+    </head>
+    <body>
+      <form action="action_page.php" id="registration">
+        <div class="SignupContainer">
+          <h1>Register</h1>
+          <div class="SignUpPtag">
+            <p>Please fill in this form to be informed about PS5 availability.</p>
+          </div>
+          <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <label><b>Amazon Code</b></label>
+            <input type="text" placeholder="ASIN" name="ASIN" id="ASIN" value="B09XG37YC8" required readonly>
+            <label><b>Discord Username</b></label>
+            <input type="text" placeholder="Discord#NNNN">
+            
+          </hr>
+          <div class="SignUpPtag">
+            <p>By giving this information you agree to our <a href="#">Terms & Privacy</a>.</p>
+        </div>
+            <button type="submit" class="B">Register</button>
+          </div>
+        </form>
+        
+          <script>
+            const myForm = document.getElementById('registration');
+
+            myForm.addEventListener('submit', function(e) {
+              e.preventDefault();
+
+              const formData = new FormData(this);
+
+              new_user = JSON.stringify(Object.fromEntries(formData));
+
+              fetch('http://127.0.0.1:5000/users', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: new_user
+              }).then(function (response) {
+                return response.text();
+              }).then(function (text) {
+                console.log(new_user);
+                console.log(text);
+              }).catch(function(error) {
+                console.error(error);
+              });
+              // console.log(formData);
+              // fetch("http://127.0.0.1:5000/users", {
+              //   method: "POST",
+              //   headers: {'Content-Type': 'application/json'}, 
+              //   body: JSON.stringify(formData)
+              // }).then(res => {
+              //   console.log("Request complete! response:", res);
+              // });
+            });
+          </script>
+    </body>
+</html>

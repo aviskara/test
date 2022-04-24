@@ -1,0 +1,259 @@
+.header{
+	font: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px; 
+	text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size:30px;
+	letter-spacing: 1px; 
+	margin-bottom: 50px; 
+	color: lightgray;
+    background-color:maroon;
+  	text-align: center; 
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-color: lightgray;
+}
+.container h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:maroon;
+    font-size: 35px;
+    letter-spacing: 1px; 
+    margin-bottom: 50px; 
+  	text-align: center; 
+    padding-top: 20px; 
+}
+.container body{
+    color: maroon; 
+	margin: 0; 
+	padding: 0;
+    min-height: 100vh;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+.HowDoesItWork p{
+    color: maroon;
+    font-size: 40px;
+}
+.itemHeader p{
+    color: maroon;
+    font-size: 30px;
+}
+footer{
+    font: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    letter-spacing: 1px; 
+    margin-bottom: 50px; 
+    margin-top: 50px;
+    color: lightgray;
+  	text-align: center; 
+}
+h2{
+    margin: 0;
+    font: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    letter-spacing: 1px; 
+    margin-bottom: 50px; 
+    color: lightgray;
+  	text-align: center; 
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: center;
+}
+th{
+    font-size: 30px;
+}
+tr{
+    background-color: lightgray;
+}
+img{
+    text-align: center;
+    margin: 0 auto;
+    object-fit:cover;
+
+}
+.InStock p{
+    color: Green;
+    font-size: 50px;
+}
+td p{
+    font-size:30px;
+    color: Green;
+}
+.B{
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  will-change: transform;
+}
+.B:disabled {
+  pointer-events: none;
+}
+.B:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.B:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.buttonPlacement {
+    align-content: center;
+    padding: 24px 12px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.OutOfStock p{
+    color: red;
+    font-size: 50px;
+}
+.Store a{
+    font-size: 30px;
+    color: maroon;
+    display: flex;
+}
+.buttons{
+    align-content: center;
+    padding: 24px 12px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.hbutton{
+    background-color: lightgray;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+td img{
+    width: 100px;
+    height: 100px;
+}
+.hbutton a{
+    color: black;
+}
+body {
+	color: maroon; 
+	margin: 0; 
+	padding: 0;
+    min-height: 100vh;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px; 
+    margin-bottom: 50px; 
+    margin-top: 50px;
+    height: 60px;
+    color: lightgray;
+  	text-align: center; 
+}
+.Register{
+    align-content: center;
+    display: flex;
+    margin: auto;
+    padding:auto;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px; 
+    margin-bottom: 50px; 
+    margin-top: 50px;
+    height: 80px;
+  	text-align: center; 
+    padding-top: 20px;
+}
+.row {
+    display: flex;
+    border: 4px solid black;
+}
+.column {
+    flex: 50%;
+    padding: 16px;
+    height: 250px;
+    background-color:maroon;
+    border-left: 4px solid black;
+}
+a{
+    color: lightgray;
+}
+.SignUpPtag p{
+    font-size: 30px;
+    color: maroon;
+}
+.SignUpPtag a{
+    color: maroon;
+}
+.SignupContainer{
+    border: 1px solid black;
+}
+label{
+    color: maroon;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}  
+.topnav a {
+    float: left;
+    top:0;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden; 
+}  
+.topnav a:hover {
+    background-color: lightgray;
+    color: black;
+}
+.topnav a.active {
+    background-color: #FE995D;
+    color: white;
+}
